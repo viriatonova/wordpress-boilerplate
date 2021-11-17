@@ -1,0 +1,1 @@
+# stricto-theme
