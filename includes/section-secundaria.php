@@ -5,7 +5,7 @@
                 <p class="center text-normal text-red-500">Web histórias</p>
             </div>
             <div class="flex flex-col sm:flex-row mt-4">
-                <?php query_posts('showposts=3&category_name=');?>
+                <?php query_posts('showposts=3&category_name=Web');?>
                 <?php if( have_posts() ) : while( have_posts() ): the_post();?>
     
                     <div class="w-full sm:w-1/3 mt-4 sm:mt-0 px-2 h-auto" id="artigo_capa">
@@ -36,7 +36,7 @@
             
             <div class="flex mt-4">
                 <div class="w-full flex flex-col sm:flex-row">
-                    <?php query_posts('showposts=2&category_name=');?>
+                    <?php query_posts('showposts=2&category_name=Arte&Cultura');?>
                     <?php if( have_posts() ) : while( have_posts() ): the_post();?>
         
                         <div class="w-full px-2">

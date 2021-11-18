@@ -4,7 +4,7 @@
         <p class="center text-normal text-red-500">Blogs & Opinião</p>
     </div>
 
-    <?php query_posts('showposts=6&category_name=');?>
+    <?php query_posts('showposts=6&category_name=Opinião');?>
     <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
        

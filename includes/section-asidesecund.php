@@ -4,7 +4,7 @@
             <p class="center text-normal text-red-500">Entreterimento</p>
         </div>
 
-        <?php query_posts('showposts=3');?>
+        <?php query_posts('showposts=6&category_name=Entretenimento');?>
         <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
         <div class="capa-ultimas py-2">

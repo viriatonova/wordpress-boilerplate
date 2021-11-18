@@ -5,7 +5,7 @@
     </div>
 
     <div class="w-full h-full flex py-4">
-        <?php query_posts('showposts=2&category_name=');?>
+        <?php query_posts('showposts=2&category_name=Ultimas');?>
         <?php if( have_posts() ) : while( have_posts() ): the_post();?>
     
           
