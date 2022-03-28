@@ -13,7 +13,7 @@ services:
             WORDPRESS_DB_PASSWORD: wppassword
             WORDPRESS_DB_NAME: wpdb
         volumes:
-            - ./public:/var/www/html/wp-content/themes/stricto
+            - ./stricto:/var/www/html/wp-content/themes/stricto
 
     db:
         image: mysql:5.7

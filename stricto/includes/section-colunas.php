@@ -1,16 +1,16 @@
 <article class="w-full h-auto mt-8 px-2 py-6 sm:border-t sm:boder-light-gray-900">
     
     <div class="inline-flex mb-4">
-        <p class="center text-normal text-red-500">Blogs & Opinião</p>
+        <p class="center text-normal text-red-500">Colunas & Opinião</p>
     </div>
 
-    <?php query_posts('showposts=6&category_name=Opinião');?>
+    <?php query_posts('showposts=4&category_name=Opinião');?>
     <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
        
         <div class="w-full h-auto flex flex-col lg:flex-row  py-4">
             <div class="w-full h-auto flex flex-col justify-start">
-                <p id="autorartigo" class="text-sm text-normal text-purple-500 uppercase">
+                <p  class="text-sm text-normal text-purple-500 uppercase">
                     <?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
                     <?php echo $FirstName;?> <?php echo $LastName;?> 
                 </p>

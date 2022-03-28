@@ -1,6 +1,6 @@
 <article class="hidden sm:flex flex-col w-full h-auto mt-4 py-2 px-4">
 
-        <?php query_posts('showposts=1&category_name=Serviços-Capa');?>
+        <?php query_posts('showposts=1&category_name=tech');?>
         <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
         <div class="capa-ultimas mt-6 py-2">

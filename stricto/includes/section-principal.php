@@ -1,11 +1,11 @@
 <article id="capa" class="w-full h-auto flex flex-col sm:flex-row mt-4 ">
     <div class="w-full h-auto py-2 mb-2">
         <div class="inline-flex ml-2 mb-2">
-            <p class="mr-4 text-normal text-red-500">Especial</p>
+            <p class="mr-4 text-normal text-red-500">Capa</p>
         </div>
         <div class="w-full h-auto flex flex-col-reverse lg:flex-row px-2 mt-2">
             
-                <?php query_posts('showposts=1&category_name=Especial');?>
+                <?php query_posts('showposts=1&category_name=Capa');?>
                 <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
                     <div id="artigo-capa" class="block w-full h-auto mt-6 px-2 sm:mt-0 sm:w-1/2 sm:px-4">

@@ -1,10 +1,10 @@
 <article class="hidden sm:flex flex-col w-full h-auto mt-4 py-2 px-4">
 
         <div class="inline-flex mb-4">
-            <p class="center text-normal text-red-500">Entreterimento</p>
+            <p class="center text-normal text-red-500">Entretenimento</p>
         </div>
 
-        <?php query_posts('showposts=6&category_name=Entretenimento');?>
+        <?php query_posts('showposts=3&category_name=Entretenimento');?>
         <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
         <div class="capa-ultimas py-2">
