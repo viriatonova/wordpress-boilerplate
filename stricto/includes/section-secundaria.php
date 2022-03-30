@@ -14,15 +14,18 @@
                         </a>
                         <div class="w-full sm:w-1/2 h-full sm:ml-4 sm:px-4">
                             <h3 class="block text-lg text-black uppercase">
-                                <a id="stricto-title" class="stricto-title" href="<?php the_permalink();?>">
+                                <a id="" class="stricto-article-title2" href="<?php the_permalink();?>">
                                     <?php the_title();?>
                                 </a>
                             </h3>
-                            <p class="block text-sm text-normal text-purple-500">Por:
-                                <?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
-                                <?php echo $FirstName;?> <?php echo $LastName;?> 
-                            </p>
-                            <div class="web-excerpt mb-4 sm:mb-0"><?php the_excerpt();?></div>
+                            <div class="flex items-end">
+                                <p class="stricto-autor-artigo">Por:
+                                    <?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
+                                    <?php echo $FirstName;?> <?php echo $LastName;?> 
+                                </p>
+                                <div class="block stricto-article-date ml-4"><?php echo get_the_date('');?></div> 
+                            </div>
+                            <div class="stricto-excerpt mt-6 mb-4 sm:mb-0"><?php the_excerpt();?></div>
                         </div>
                     </div>
     
@@ -42,12 +45,12 @@
 					<?php query_posts('showposts=1&category_name=ArteCultura');?>
 					<?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
-					<div class="w-full px-2">
+					<div class="w-full px-2 flex">
 						<a id="arte-image" href="<?php the_permalink();?>">
 							<?php echo get_the_post_thumbnail( get_the_ID(), 'stricto-small' );?>
 						</a>
-						<div class="arte-ultimas w-full flex flex-col mt-2 items-start">
-							<a  class="stricto-title-art" href="<?php the_permalink();?>">
+						<div class="w-full sm:w-1/2 flex flex-col sm:ml-4 sm:px-4 mt-2 items-start">
+							<a  class="stricto-title-art2" href="<?php the_permalink();?>">
 								<?php the_title();?>
 							</a>
 							<div class="flex mt-2 items-center ">
@@ -58,7 +61,7 @@
 								<div class="ml-4 text-gray-700 text-sm font-extralight tracking-wide"><?php echo get_the_date('');?></div> 
 							</div>
 
-							<div class="web-excerpt mb-4 sm:mb-0"><?php the_excerpt();?></div>
+							<div class="stricto-excerpt mt-4 mb-4 sm:mb-0"><?php the_excerpt();?></div>
 						</div>
 					</div>
 

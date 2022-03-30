@@ -7,13 +7,13 @@
             <a class="stricto-title-art" href="<?php the_permalink();?>">
                 <?php the_title();?></a>
             <div class="flex mt-2 items-center ">
-                <!-- <div id="autorartigo" class="block text-sm text-normal text-purple-500">Por:
+                <div id="autorartigo" class="stricto-autor-artigo">Por:
                     <?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
                     <?php echo $FirstName;?> <?php echo $LastName;?> 
-                </div> -->
-                <div class="text-gray-700 text-sm font-extralight tracking-wide"><?php echo get_the_date('');?></div> 
+                </div> 
+                <div class="stricto-article-date ml-4"><?php echo get_the_date('');?></div> 
             </div>
-            <div class="web-excerpt"><?php the_excerpt();?></div>
+            <div class="stricto-excerpt mt-6"><?php the_excerpt();?></div>
         </div>
         <a class="image-padrao mt-4" href="<?php the_permalink();?>">
             <?php echo get_the_post_thumbnail( get_the_ID(), 'stricto-small' );?>

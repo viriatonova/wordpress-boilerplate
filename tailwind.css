@@ -45,8 +45,17 @@
             @apply text-5xl font-roboto tracking-wider font-medium text-justify
         }
 
+        .stricto-article-title2{
+            @apply text-4xl font-roboto tracking-wider font-medium text-justify
+        }
+
         .stricto-autor-artigo{
-            @apply block text-sm font-open font-light tracking-widest text-purple-900
+            @apply block text-xs font-open font-light tracking-widest text-purple-900
+            uppercase
+        }
+        .stricto-autor-artigo{
+            @apply block text-xs font-open font-light tracking-widest text-purple-900
+            uppercase
         }
 
         .stricto-article-date{
@@ -58,6 +67,14 @@
 
         }
 
+    /* ASIDE */
+        
+        .stricto-title-art {
+            @apply text-5xl font-didone tracking-wider font-medium text-justify
+        }
 
+        .stricto-title-art2 {
+            @apply text-4xl font-didone tracking-wider font-medium text-justify
+        }
 
 }
