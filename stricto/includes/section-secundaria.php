@@ -8,20 +8,22 @@
                 <?php query_posts('showposts=1&category_name=WebHistorias');?>
                 <?php if( have_posts() ) : while( have_posts() ): the_post();?>
     
-                    <div class="w-full sm:w-1/3 mt-4 sm:mt-0 px-2 h-auto" id="artigo_capa">
-                        <h3 class="block text-lg text-black uppercase">
-                            <a id="stricto-title" class="stricto-title" href="<?php the_permalink();?>">
-                                <?php the_title();?>
-                            </a>
-                        </h3>
-                        <p class="block text-sm text-normal text-purple-500">Por:
-                            <?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
-                            <?php echo $FirstName;?> <?php echo $LastName;?> 
-                        </p>
-                        <div class="web-excerpt mb-4 sm:mb-0"><?php the_excerpt();?></div>
-                        <a class="web-image" href="<?php the_permalink();?>">
+                    <div class="w-full h-full flex flex-col sm:flex-row mt-4 sm:mt-0 px-2" id="artigo_capa">
+                        <a class="" href="<?php the_permalink();?>">
                             <?php echo get_the_post_thumbnail( get_the_ID(), 'stricto-small' );?>
                         </a>
+                        <div class="w-full sm:w-1/2 h-full sm:ml-4 sm:px-4">
+                            <h3 class="block text-lg text-black uppercase">
+                                <a id="stricto-title" class="stricto-title" href="<?php the_permalink();?>">
+                                    <?php the_title();?>
+                                </a>
+                            </h3>
+                            <p class="block text-sm text-normal text-purple-500">Por:
+                                <?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
+                                <?php echo $FirstName;?> <?php echo $LastName;?> 
+                            </p>
+                            <div class="web-excerpt mb-4 sm:mb-0"><?php the_excerpt();?></div>
+                        </div>
                     </div>
     
                 <?php endwhile; else: endif; ?>

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+
+    /* HEADER */
+
+        .stricto-sitename {
+            @apply py-1
+        }
+
+        .stricto-sitename a {
+            @apply uppercase tracking-wider text-4xl font-roboto font-bold
+        }
+
+        .stricto-sitedescription {
+            @apply mt-px
+        }
+
+        .stricto-sitedescription a {
+            @apply uppercase tracking-wider text-sm font-open font-light
+        }
+        
+        .stricto-time {
+            @apply w-52 h-auto hidden sm:flex flex-col justify-center text-left text-sm 
+            tracking-wide font-open font-light
+        }
+
+        .stricto-menutop div ul li > a {
+            @apply font-open hover:underline text-lg px-2 border-r border-gray-900
+        }
+
+        .btn-apoie {
+            @apply px-4 py-2 border border-purple-900 font-open tracking-wider 
+            capitalize hover:border-none hover:bg-purple-700 hover:text-white
+            text-center rounded-lg font-medium ease-in-out transition-colors duration-150
+            hover:font-bold
+        }
+
+    /* SECTION PRINCIPAL */
+
+        .stricto-article-title{
+            @apply text-5xl font-roboto tracking-wider font-medium text-justify
+        }
+
+        .stricto-autor-artigo{
+            @apply block text-sm font-open font-light tracking-widest text-purple-900
+        }
+
+        .stricto-article-date{
+            @apply text-gray-700 text-sm font-extralight tracking-wide font-open
+        }
+
+        .stricto-excerpt{
+            @apply text-sm font-open font-light tracking-wide leading-6 text-justify
+
+        }
+
+
+
+}

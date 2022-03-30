@@ -1,12 +1,11 @@
 module.exports = {
   mode: 'jit',
-  purge: [
-    '**/*.php',
-    '*.php',
-    'assets/js/**/*.js',
-    'assets/css/**/*.css',
+  content: [
+    './stricto/**/*.php',
+    './stricto/*.php',
+    './stricto/assets/js/**/*.js',
+    './stricto/assets/css/**/*.css',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {

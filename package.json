@@ -1,0 +1,22 @@
+{
+  "name": "dev-wordpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "npx tailwindcss -i ./tailwind.css -o ./stricto/assets/css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viriatonova/dev-wordpress.git"
+  },
+  "author": "Viriato Nova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viriatonova/dev-wordpress/issues"
+  },
+  "homepage": "https://github.com/viriatonova/dev-wordpress#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}

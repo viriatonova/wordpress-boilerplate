@@ -17,7 +17,7 @@
 
             <?php get_template_part('includes/section', 'asideprincipal');?>
 
-            <!-- <?php get_template_part('includes/section', 'servicos');?> -->
+            <!-- <?php //get_template_part('includes/section', 'servicos');?> -->
             
             <?php get_template_part('includes/section', 'colunas');?>
             
