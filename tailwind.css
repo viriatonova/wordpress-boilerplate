@@ -41,28 +41,28 @@
 
     /* SECTION PRINCIPAL */
 
-        .stricto-article-title{
+        .stricto-article-title {
             @apply text-5xl font-roboto tracking-wider font-medium text-justify
         }
 
-        .stricto-article-title2{
+        .stricto-article-title2 {
             @apply text-4xl font-roboto tracking-wider font-medium text-justify
         }
 
-        .stricto-autor-artigo{
+        .stricto-autor-artigo {
             @apply block text-xs font-open font-light tracking-widest text-purple-900
             uppercase
         }
-        .stricto-autor-artigo{
+        .stricto-autor-artigo {
             @apply block text-xs font-open font-light tracking-widest text-purple-900
             uppercase
         }
 
-        .stricto-article-date{
+        .stricto-article-date {
             @apply text-gray-700 text-sm font-extralight tracking-wide font-open
         }
 
-        .stricto-excerpt{
+        .stricto-excerpt {
             @apply text-sm font-open font-light tracking-wide leading-6 text-justify
 
         }
@@ -77,4 +77,51 @@
             @apply text-4xl font-didone tracking-wider font-medium text-justify
         }
 
+    /* ARTICLE PAGE */
+
+        .stricto-post {
+            @apply w-full h-full px-2 sm:px-6 md:px-12
+        }
+
+        .stricto-title-blog {
+            @apply text-5xl font-roboto tracking-wider font-medium text-left sm:text-center
+            mt-4 py-4 flex justify-start sm:justify-center
+        }
+
+        .stricto-excerpt-blog {
+            @apply w-full text-base mt-2 py-2 mb-6 sm:px-16 text-gray-600 tracking-wider 
+            flex justify-center text-justify sm:text-center font-open font-light leading-normal
+        }
+
+        .stricto-wrap-autor-blog {
+            @apply w-full sm:w-1/3  mt-6 sm:mt-0 flex justify-start items-end
+        }
+
+        .stricto-avatar {
+            @apply shadow-md
+        }
+
+        .stricto-avatar img {
+            @apply rounded-md 
+        }
+
+        .stricto-content {
+            @apply w-full h-full flex flex-col space-y-6 sm:space-y-10
+            py-2 sm:px-6 mt-2 sm:mt-4 mb-24
+        }
+
+        .stricto-content > p {
+            @apply font-open text-lg sm:text-xl tracking-wider sm:tracking-widest 
+            leading-relaxed sm:leading-loose text-justify
+            text-gray-900
+        }
+
+        .stricto-content > h2 {
+            @apply font-open text-2xl sm:text-4xl tracking-wider sm:tracking-widest 
+            text-left sm:text-justify text-gray-900 
+        }
+        
+        #comment {
+            @apply w-1/2
+        }
 }

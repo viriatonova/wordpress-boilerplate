@@ -9,7 +9,7 @@
             
             <?php get_template_part('includes/section', 'secundaria');?>
 			
-			<?php get_template_part('includes/section', 'anterior');?>
+			<!-- <?php //get_template_part('includes/section', 'anterior');?> -->
             
         </section>
 

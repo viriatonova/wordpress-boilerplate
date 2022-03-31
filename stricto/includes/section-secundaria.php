@@ -13,7 +13,7 @@
                             <?php echo get_the_post_thumbnail( get_the_ID(), 'stricto-small' );?>
                         </a>
                         <div class="w-full sm:w-1/2 h-full sm:ml-4 sm:px-4">
-                            <h3 class="block text-lg text-black uppercase">
+                            <h3 class="mt-6 sm:mt-0">
                                 <a id="" class="stricto-article-title2" href="<?php the_permalink();?>">
                                     <?php the_title();?>
                                 </a>
@@ -33,7 +33,7 @@
                 <?php wp_reset_query();?>
             </div>
         </article>
-        <article class="w-full h-full mt-2 mx-2  py-4 border-t border-light-gray-900 ">
+        <article class="w-full h-full mt-2 mx-2 py-4 border-t border-light-gray-900 ">
 
             <div class="inline-flex py-px mb-2 mt-6">
                 <p class="center text-normal text-red-500">Arte & Cultura</p>
@@ -45,20 +45,20 @@
 					<?php query_posts('showposts=1&category_name=ArteCultura');?>
 					<?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
-					<div class="w-full px-2 flex">
+					<div class="w-full px-2 flex flex-col sm:flex-row">
 						<a id="arte-image" href="<?php the_permalink();?>">
 							<?php echo get_the_post_thumbnail( get_the_ID(), 'stricto-small' );?>
 						</a>
-						<div class="w-full sm:w-1/2 flex flex-col sm:ml-4 sm:px-4 mt-2 items-start">
-							<a  class="stricto-title-art2" href="<?php the_permalink();?>">
+						<div class="w-full sm:w-1/2 flex flex-col sm:ml-4 sm:px-4 items-start">
+							<a  class="stricto-title-art2 mt-6 sm:mt-0" href="<?php the_permalink();?>">
 								<?php the_title();?>
 							</a>
-							<div class="flex mt-2 items-center ">
-								<div class="block text-sm text-normal text-purple-500">Por:
+							<div class="flex items-center ">
+								<div class="stricto-autor-artigo">Por:
 									<?php $FirstName = get_the_author_meta('first_name'); $LastName = get_the_author_meta('last_name');?>
 									<?php echo $FirstName;?> <?php echo $LastName;?> 
 								</div>
-								<div class="ml-4 text-gray-700 text-sm font-extralight tracking-wide"><?php echo get_the_date('');?></div> 
+								<div class="stricto-article-date ml-4"><?php echo get_the_date('');?></div> 
 							</div>
 
 							<div class="stricto-excerpt mt-4 mb-4 sm:mb-0"><?php the_excerpt();?></div>
