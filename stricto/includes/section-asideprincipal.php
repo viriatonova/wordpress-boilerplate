@@ -1,9 +1,9 @@
 <article class="hidden sm:flex flex-col w-full h-auto mt-4 py-2 px-4">
 
-        <?php query_posts('showposts=1&category_name=tech');?>
+        <?php query_posts('showposts=1&category_name=Tech');?>
         <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
-        <div class="capa-ultimas mt-6 py-2">
+        <div class="mt-6 py-2">
             <a class="stricto-title-art" href="<?php the_permalink();?>">
                 <?php the_title();?></a>
             <div class="flex mt-2 items-center ">

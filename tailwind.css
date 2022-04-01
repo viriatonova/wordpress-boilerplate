@@ -42,11 +42,12 @@
     /* SECTION PRINCIPAL */
 
         .stricto-article-title {
-            @apply text-5xl font-roboto tracking-wider font-medium text-justify
+            @apply w-full text-5xl font-roboto tracking-wider font-medium text-justify
+            mt-4 md:mt-0
         }
 
         .stricto-article-title2 {
-            @apply text-4xl font-roboto tracking-wider font-medium text-justify
+            @apply w-full text-4xl font-roboto tracking-wider font-medium text-justify
         }
 
         .stricto-autor-artigo {
@@ -70,17 +71,17 @@
     /* ASIDE */
         
         .stricto-title-art {
-            @apply text-5xl font-didone tracking-wider font-medium text-justify
+            @apply text-5xl font-didone tracking-wider font-medium text-left lg:text-justify
         }
 
         .stricto-title-art2 {
-            @apply text-4xl font-didone tracking-wider font-medium text-justify
+            @apply text-4xl font-didone tracking-wider font-medium text-left lg:text-justify
         }
 
     /* ARTICLE PAGE */
 
         .stricto-post {
-            @apply w-full h-full px-2 sm:px-6 md:px-12
+            @apply w-full h-full px-2 sm:px-12 md:px-36
         }
 
         .stricto-title-blog {
@@ -111,7 +112,7 @@
         }
 
         .stricto-content > p {
-            @apply font-open text-lg sm:text-xl tracking-wider sm:tracking-widest 
+            @apply font-open text-lg sm:text-xl tracking-wide 
             leading-relaxed sm:leading-loose text-justify
             text-gray-900
         }
@@ -121,7 +122,77 @@
             text-left sm:text-justify text-gray-900 
         }
         
-        #comment {
-            @apply w-1/2
+      
+        .stricto-post-footer #respond #reply-title {
+            @apply hidden
         }
+
+        .stricto-post-footer #respond form .comment-notes {
+            @apply hidden
+        }
+
+        .stricto-post-footer #respond form {
+            @apply flex flex-col space-y-4
+        }
+
+        .stricto-post-footer #respond form .comment-form-comment {
+            @apply w-full h-auto flex justify-start items-start
+        }
+
+        .stricto-post-footer #respond form .comment-form-comment label {
+            @apply w-1/4 font-open text-base tracking-wider font-semibold
+        }
+
+        .stricto-post-footer #respond form .comment-form-comment #comment {
+            @apply w-3/4 px-6 font-open text-base tracking-wider border rounded-lg
+            border-gray-900 focus:border-red-700
+        }
+
+        .stricto-post-footer #respond form .comment-form-author {
+            @apply w-full h-auto flex justify-start items-center
+        }
+
+        .stricto-post-footer #respond form .comment-form-author label {
+            @apply w-1/4 font-open text-base tracking-wider font-semibold
+        }
+
+        .stricto-post-footer #respond form .comment-form-author #author {
+            @apply w-3/4 px-6 py-2 font-open text-base tracking-wider border rounded-lg
+            border-gray-900 focus:border-red-700
+        }
+
+        .stricto-post-footer #respond form .comment-form-email {
+            @apply w-full h-auto flex justify-start items-center
+        }
+
+        .stricto-post-footer #respond form .comment-form-email label {
+            @apply w-1/4 font-open text-base tracking-wider font-semibold
+        }
+
+        .stricto-post-footer #respond form .comment-form-email #email {
+            @apply w-3/4 px-6 py-2 font-open text-base tracking-wider border rounded-lg
+            border-gray-900 focus:border-red-700
+        }
+
+        .stricto-post-footer #respond form .comment-form-url {
+            @apply hidden
+        }
+
+        .stricto-post-footer #respond form .form-submit {
+            @apply w-1/4 self-end px-4 py-2 border border-purple-900 font-open tracking-wider 
+            capitalize hover:border-none hover:bg-purple-700 hover:text-white
+            text-center rounded-lg font-medium ease-in-out transition-colors duration-150
+            hover:font-bold
+        }
+
+        .stricto-post-footer .commentlist {
+            @apply w-full h-auto flex flex-col space-y-4 border-b border-gray-700
+        }
+
+        .stricto-post-footer .commentlist > li .comment-body {
+            @apply py-4 flex flex-col space-y-2 
+        }
+
+
+        
 }

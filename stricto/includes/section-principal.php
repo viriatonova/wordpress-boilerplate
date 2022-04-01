@@ -8,7 +8,7 @@
                 <?php query_posts('showposts=1&category_name=Capa');?>
                 <?php if( have_posts() ) : while( have_posts() ): the_post();?>
 
-                    <div id="artigo-capa" class="block w-full h-auto mt-6 px-2 sm:mt-0 sm:w-1/2 sm:px-4">
+                    <div id="artigo-capa" class="block w-full h-auto mt-6 px-2 lg:mt-0 lg:w-1/2 lg:px-4">
 
                         <a class="stricto-article-title" href="<?php the_permalink();?>">
                             <?php the_title();?>
@@ -21,10 +21,10 @@
                             <p class="ml-4 stricto-article-date"><?php echo get_the_date('');?></p> 
                         </div>
                         
-                        <div class="stricto-excerpt mb-10 mt-2 sm:mt-6 sm:mb-0"><?php the_excerpt();?></div>
+                        <div class="stricto-excerpt mb-10 mt-6 sm:mb-0"><?php the_excerpt();?></div>
                     </div>
                     
-                    <a class="capa-image" href="<?php the_permalink();?>">
+                    <a class="flex justify-center" href="<?php the_permalink();?>">
                         <?php echo get_the_post_thumbnail( get_the_ID(), 'stricto-normal' );?>
                     </a>
                 

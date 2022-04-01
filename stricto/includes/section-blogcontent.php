@@ -4,7 +4,7 @@
     <h2 class="stricto-title-blog"><?php the_title();?></h2>
     <h3 class="stricto-excerpt-blog"> <?php the_excerpt();?></h3>
 
-   <div class="image-post"><?php echo get_the_post_thumbnail( get_the_ID() );?></div>
+   <div class="w-full flex justify-center"><?php echo get_the_post_thumbnail( get_the_ID() );?></div>
 
 
     <div class="w-full h-full mt-px sm:mt-8 py-2 flex border-b boder-red-900">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="w-full sm:w-1/3 flex mt-6 sm:mt-0 justify-start items-end">
-                <div class="w-full sm:w-1/2 mt-2 sm:mt-0 flex">
+                <div class="w-full mt-2 sm:mt-0 flex justify-center items-center">
                     <?php $categories = get_the_category(); foreach($categories as $cat): ?>
                         <a class="w-auto h-auto ml-2 px-2 py-px text-gray-900 border border-gray-600 rounded-lg hover:bg-purple-700 hover:text-white" 
                         href="<?php echo get_category_link($cat->term_id);?>"> <?php echo $cat->name;?></a>
@@ -70,8 +70,8 @@
         </div>
     
     </div>
-    <h3 class="mt-12 text-2xl">Comentários</h3>   
-    <footer class="w-full h-auto mt-4 mb-12">
+    <h3 class="mt-12 text-2xl border-b border-gray-900">Comentários</h3>   
+    <footer class="w-full h-auto mt-4 mb-12 stricto-post-footer">
          
         <?php comments_template();?>
 

@@ -38,7 +38,7 @@
         <section class="w-2/3 flex flex-col justify-start items-start">
             <div class="w-full px-2 flex ">
                 <div class="w-full flex flex-col justify-start px-2">
-                    <h3 class="w-full text-xl capitalize tracking-wide text-purple-900 font-roboto">apoie o jornalismo independente</h3>
+                    <h3 class="w-full text-xl tracking-wide text-purple-900 font-roboto">Apoie o Jornalismo Independente</h3>
                     <p class="w-full text-sm tracking-wider leading-6 py-6 font-open">
                         O Stricto Digital é um meio de comunicação independete. Para continuar fazendo o trabalho
                         que desempenhamos contamos com sua colaboração. Se quiser saber mais sobre como
