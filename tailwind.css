@@ -50,10 +50,10 @@
             @apply w-full text-4xl font-roboto tracking-wider font-medium text-justify
         }
 
-        .stricto-autor-artigo {
-            @apply block text-xs font-open font-light tracking-widest text-purple-900
-            uppercase
+        .stricto-article-title3 {
+            @apply text-2xl font-roboto tracking-wider font-normal
         }
+
         .stricto-autor-artigo {
             @apply block text-xs font-open font-light tracking-widest text-purple-900
             uppercase
@@ -72,10 +72,11 @@
         
         .stricto-title-art {
             @apply text-5xl font-didone tracking-wider font-medium text-left lg:text-justify
+            capitalize
         }
 
         .stricto-title-art2 {
-            @apply text-4xl font-didone tracking-wider font-medium text-left lg:text-justify
+            @apply text-4xl font-didone tracking-wider font-medium text-left 
         }
 
     /* ARTICLE PAGE */
@@ -144,7 +145,7 @@
         }
 
         .stricto-post-footer #respond form .comment-form-comment #comment {
-            @apply w-3/4 px-6 font-open text-base tracking-wider border rounded-lg
+            @apply w-3/4 px-2 font-open text-base tracking-wider border rounded-lg
             border-gray-900 focus:border-red-700
         }
 
@@ -157,7 +158,7 @@
         }
 
         .stricto-post-footer #respond form .comment-form-author #author {
-            @apply w-3/4 px-6 py-2 font-open text-base tracking-wider border rounded-lg
+            @apply w-3/4 px-2 py-2 font-open text-base tracking-wider border rounded-lg
             border-gray-900 focus:border-red-700
         }
 
@@ -170,7 +171,7 @@
         }
 
         .stricto-post-footer #respond form .comment-form-email #email {
-            @apply w-3/4 px-6 py-2 font-open text-base tracking-wider border rounded-lg
+            @apply w-3/4 px-2 py-2 font-open text-base tracking-wider border rounded-lg
             border-gray-900 focus:border-red-700
         }
 
@@ -179,7 +180,7 @@
         }
 
         .stricto-post-footer #respond form .form-submit {
-            @apply w-1/4 self-end px-4 py-2 border border-purple-900 font-open tracking-wider 
+            @apply w-full lg:w-1/4 self-center lg:self-end px-4 py-2 border border-purple-900 font-open tracking-wider 
             capitalize hover:border-none hover:bg-purple-700 hover:text-white
             text-center rounded-lg font-medium ease-in-out transition-colors duration-150
             hover:font-bold
@@ -193,6 +194,9 @@
             @apply py-4 flex flex-col space-y-2 
         }
 
+        .stricto-bt-social {
+            @apply hover:text-purple-700
+        }
 
         
 }
