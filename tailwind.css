@@ -198,5 +198,8 @@
             @apply hover:text-purple-700
         }
 
+        .menu-paginas {
+            @apply flex space-x-2
+        }
         
 }
