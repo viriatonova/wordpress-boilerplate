@@ -28,8 +28,12 @@
             tracking-wide font-open font-light
         }
 
-        .stricto-menutop div ul li > a {
-            @apply font-open hover:underline text-lg px-2 border-r border-gray-900
+        .menu-paginas {
+            @apply flex space-x-2
+        }
+
+        .menu-paginas > li > a {
+            @apply font-open hover:underline text-sm px-2 border-r border-gray-900 uppercase
         }
 
         .btn-apoie {
@@ -42,12 +46,12 @@
     /* SECTION PRINCIPAL */
 
         .stricto-article-title {
-            @apply w-full text-5xl font-roboto tracking-wider font-medium text-justify
+            @apply w-full text-4xl font-roboto tracking-wider font-medium text-justify
             mt-4 md:mt-0
         }
 
         .stricto-article-title2 {
-            @apply w-full text-4xl font-roboto tracking-wider font-medium text-justify
+            @apply w-full text-3xl font-roboto tracking-wider font-medium text-justify
         }
 
         .stricto-article-title3 {
@@ -60,7 +64,7 @@
         }
 
         .stricto-article-date {
-            @apply text-gray-700 text-sm font-extralight tracking-wide font-open
+            @apply text-gray-700 text-xs font-extralight tracking-wide font-open
         }
 
         .stricto-excerpt {
@@ -71,12 +75,12 @@
     /* ASIDE */
         
         .stricto-title-art {
-            @apply text-5xl font-didone tracking-wider font-medium text-left lg:text-justify
+            @apply text-4xl font-didone tracking-wider font-medium text-left lg:text-justify
             capitalize
         }
 
         .stricto-title-art2 {
-            @apply text-4xl font-didone tracking-wider font-medium text-left 
+            @apply text-3xl font-didone tracking-wider font-medium text-left 
         }
 
     /* ARTICLE PAGE */
@@ -113,7 +117,7 @@
         }
 
         .stricto-content > p {
-            @apply font-open text-lg sm:text-xl tracking-wide 
+            @apply font-open text-xl tracking-wide 
             leading-relaxed sm:leading-loose text-justify
             text-gray-900
         }
