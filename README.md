@@ -1,9 +1,5 @@
 # WordPress-Boilerplate
 
 
-WordPress boilerplate to create themes with Tailwindcss framework
+WordPress boilerplate to create themes with Docker and Tailwindcss
 
-
-## Tailwind-develop
-
-output tailwind comand - npm run dev
